@@ -43,5 +43,5 @@ EXPOSE 5000
 
 COPY start.sh /
 
-#CMD ["/start.sh"]
-CMD [ "exec gunicorn -u alarmdecoder -g alarmdecoder -b 0.0.0.0:8000 wsgi:application" ]
+CMD ["/start.sh"]
+#CMD [ "exec gunicorn -u alarmdecoder -g alarmdecoder -b 0.0.0.0:8000 wsgi:application" ]
